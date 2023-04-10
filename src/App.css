@@ -11,3 +11,42 @@
 a{
    cursor: url(assets/img/102538.png), pointer;
 }
+
+body {
+   background-image: url('assets/img/fondo.jpg');
+   background-size: 100% auto;
+ }
+
+ @media (max-width: 800px) {
+   body {
+     background-size: 50% auto;
+   }
+ }
+
+ @media (max-width: 800px) {
+   body {
+     background-image: url('assets/img/fondophone.jpg');
+     background-size: cover;
+   }
+ }
+
+ @keyframes ship-path {
+  0% { transform: translateX(0) translateY(0); }
+  50% { transform: translateX(50vw) translateY(50vh); }
+  60% { transform: translateX(60vw) translateY(15vh); }
+  70% { transform: translateX(75vw) translateY(34vh); }
+  99% { transform: translateX(100vw) translateY(15vh); }
+}
+
+.ship {
+  position: absolute;
+  top: 28%;
+  left: 6%;
+  width: 60px;
+  height: 60px;
+  transform: translateX(-100%);
+  animation: ship-path 10s linear infinite;
+}
+
+.card {
+  margin: 10px;}
