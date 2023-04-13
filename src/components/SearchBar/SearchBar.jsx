@@ -1,4 +1,4 @@
-import style from "./SearchBar.module.css";
+import styles from "./SearchBar.module.css";
 import { useState } from 'react';
 
 export default function SearchBar({ onSearch }) {
@@ -17,9 +17,9 @@ export default function SearchBar({ onSearch }) {
    }
 
    return (
-      <div className={style.container}>
-         <input className={style.search} type='search' onChange={handleChange} onKeyDown={handleKeyDown} value={id} />
-         <button onClick={() =>{onSearch(id); setId('')}}>Agregar</button>
+      <div className={styles.container}>
+         <input className={styles.search} type='search' onChange={handleChange} onKeyDown={handleKeyDown} value={id} />
+         <button className={styles.agregar} onClick={() =>{onSearch(id); setId('')}}>🔍︎</button>
       </div>
    );
 }

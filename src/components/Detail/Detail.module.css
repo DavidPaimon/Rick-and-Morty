@@ -82,9 +82,31 @@
     height: 2.2rem;
     background: linear-gradient(rgba(81, 150, 110, 0.461), rgba(0, 0, 0, 0));
     border: transparent;
-
     overflow: hidden;
     transition: 300ms;
+    animation: glowing3 2.5s linear infinite;
+}
+
+@keyframes glowing3 {
+  0% {
+    box-shadow: 0 0 20px #34c963;
+  }
+
+  25% {
+    box-shadow: 0 0 30px #1f9e47;
+  }
+
+  50% {
+    box-shadow: 0 0 50px #00a105ef;
+  }
+
+  75% {
+    box-shadow: 0 0 30px #1f9e47;
+  }
+
+  100% {
+    box-shadow: 0 0 20px #34c963;
+  }
 }
 .container div button:hover{
     cursor: pointer;

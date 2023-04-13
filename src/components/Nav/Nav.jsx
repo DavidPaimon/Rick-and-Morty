@@ -10,9 +10,10 @@ const Nav = ({ onSearch }) => {
         <div className={style.btns}>
             <Link to='/about'> ABOUT </Link>
             <Link to='/home'> HOME </Link>
+            <Link to='/favorites'> FAVORITES </Link>
         </div>
 
-            <SearchBar onSearch={onSearch}/>
+            <SearchBar onSearch={onSearch} />
         </nav>
     )
 }

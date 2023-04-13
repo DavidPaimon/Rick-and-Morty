@@ -32,6 +32,9 @@ const Detail = () => {
               <button>
                   <Link to='/home' className={style.link} >Home</Link>
               </button>
+              <button>
+              <Link to='/Favorites' className={style.link} >Favorites</Link>
+              </button>
               <h1>{character?.name}</h1>
             </div>
 
