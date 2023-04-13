@@ -30,11 +30,11 @@ const Form = ({ login }) => {
         <div className={styles["form-container"]}>
         <form onSubmit={handleSubmit}>
             <label htmlFor="email" style={{ color: "white"}}>Email: </label>
-            <input type="email" name='email' value={userData.email} onChange={handleChange}/>
+            <input className={styles["input-field"]} type="email" name='email' value={userData.email} onChange={handleChange}/>
             {errors.email && <p style={{ color: "white"}}>{errors.email}</p>}
             <hr />
             <label htmlFor="password" style={{ color: "white"}}>Password: </label>
-            <input type="password" name="password" value={userData.password} onChange={handleChange}/>
+            <input className={styles["input-field"]} type="password" name="password" value={userData.password} onChange={handleChange}/>
             {errors.password && <p style={{ color: "white"}}>{errors.password}</p>}
 
             <button className={styles.submit}>Submit</button>

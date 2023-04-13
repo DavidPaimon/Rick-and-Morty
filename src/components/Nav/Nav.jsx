@@ -2,7 +2,7 @@ import style from "./Nav.module.css";
 import SearchBar from '../SearchBar/SearchBar';
 import { Link } from 'react-router-dom';
 
-const Nav = ({ onSearch }) => {
+const Nav = ({ onSearch, logout }) => {
 
     return (
         <nav className={style.nav}>
@@ -14,6 +14,7 @@ const Nav = ({ onSearch }) => {
         </div>
 
             <SearchBar onSearch={onSearch} />
+            <button className={style.btn} onClick={logout}>LOG OUT</button>
         </nav>
     )
 }

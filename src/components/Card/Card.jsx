@@ -14,7 +14,7 @@ function Card({ id, name, status, species, gender, origin, image, onClose, locat
          removeFav(id);
       }else{
          setIsFav(true);
-         addFav({id, name, species, gender,});
+         addFav({id, name, species, gender, image, location, status, origin});
       }
    }
 
@@ -31,9 +31,9 @@ function Card({ id, name, status, species, gender, origin, image, onClose, locat
 
       {
          isFav ? (
-            <button onClick={handleFavorite}>🌟</button>
+            <button onClick={handleFavorite}>🌟</button> //boton de favorites
          ) : (
-            <button onClick={handleFavorite}>⚝</button>
+            <button onClick={handleFavorite}>⚝</button> //boton de favorites
          )
       }
 

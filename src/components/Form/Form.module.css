@@ -84,6 +84,10 @@
   
 
   .form-container {
+    background-image: url('../../assetsform/formfondo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 24%;
     position: absolute;
     left: 2%;
@@ -110,11 +114,12 @@
     margin-bottom: 10px;
     box-sizing: border-box;
     font-size: 16px;
-    background: linear-gradient(
+    background-color: transparent;
+    /* background: linear-gradient(
       45deg,
      rgb(38, 48, 36), rgb(48, 76, 48), rgb(50, 116, 50),
       rgb(28, 152, 28), rgb(4, 250, 4), rgb(82, 254, 2)
-    );
+    ); */
     animation: glowing2 2s linear infinite;
   }
 
@@ -130,6 +135,11 @@
     100% {
       box-shadow: 0 0 10px #4CAF50;
     }
+  }
+
+  .input-field{
+    color: white;
+    font-family: 'Times New Roman', sans-serif;
   }
   
 

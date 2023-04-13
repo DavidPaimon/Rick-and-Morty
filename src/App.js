@@ -29,6 +29,11 @@ function App() {
       }
    }
 
+   const logout = () => {
+      setAccess(false);
+      navigate('/');
+   }
+
    useEffect(() => {
       !access && navigate('/')
    }, [access, navigate])
@@ -60,7 +65,7 @@ function App() {
       
       <div className='App'>
            {
-            location.pathname !== '/' && <Nav onSearch={onSearch} />
+            location.pathname !== '/' && <Nav onSearch={onSearch} logout={logout} />
          }
          
          <Routes>

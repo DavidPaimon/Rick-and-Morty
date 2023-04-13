@@ -1,7 +1,7 @@
 import './Cards.module.css'
 import Card from '../Card/Card';
 
-export default function Cards({ characters, onClose }) {
+function Cards({ characters, onClose }) {
    return (
       <div className="container">
          {
@@ -27,3 +27,4 @@ export default function Cards({ characters, onClose }) {
    )
 }
 
+export default Cards;

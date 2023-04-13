@@ -7,7 +7,7 @@ const Favorites = () => {
 
     return (
         <>
-        {favorites.map(({ id, name, status, species, gender, origin, image, location }) => {
+        {favorites.map(({ id, name, status, species, gender, origin, image, location, onClose }) => {
          return (
           <Card
              key={id}
@@ -19,7 +19,8 @@ const Favorites = () => {
              image={image}
              origin={origin}
              location={location}
-             className="card"
+             onClose={onClose}
+             
         />
             )
         })

@@ -108,6 +108,7 @@
     box-shadow: 0 0 20px #34c963;
   }
 }
+
 .container div button:hover{
     cursor: pointer;
     transform: scale(1.1);
