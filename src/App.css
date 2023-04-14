@@ -15,6 +15,7 @@ a{
 body {
    background-image: url('assets/img/fondo.jpg');
    background-size: 100% auto;
+   background-repeat: no-repeat;
  }
 
  @media (max-width: 800px) {
@@ -50,3 +51,26 @@ body {
 
 .card {
   margin: 10px;}
+
+  .nave{
+    top: 70px;
+   position: absolute;
+   left: 75%;
+    height: 100px;
+    width: 150px;
+    animation-delay: 1s;
+    animation: rotate 60s linear infinite;
+    perspective: 100px;
+ }
+  @keyframes rotate{
+    0%{
+        transform: rotateY(360deg) translateZ(2800px);
+        /* z-index: 10; */
+     } 
+     50%{
+        /* z-index: 0; */
+    } 
+    to{
+        transform:rotateY(0) translateZ(-1388px);
+    }  
+ }  

@@ -27,7 +27,7 @@ const Form = ({ login }) => {
     }
 
     return(
-        <div className={styles["form-container"]}>
+    <div className={styles["form-container"]}>
         <form onSubmit={handleSubmit}>
             <label htmlFor="email" style={{ color: "white"}}>Email: </label>
             <input className={styles["input-field"]} type="email" name='email' value={userData.email} onChange={handleChange}/>
@@ -39,6 +39,16 @@ const Form = ({ login }) => {
 
             <button className={styles.submit}>Submit</button>
         </form>
+
+        <div>
+        <img className={styles.portales} src='https://media1.giphy.com/media/Yo2fMrTG6dgLdiKX2z/giphy.gif?cid=6c09b952f32feda613bf47216f283f33816770560ad3150d&rid=giphy.gif&ct=s' alt='not found'/>
+        <img className={styles.portales1} src='https://media1.giphy.com/media/Yo2fMrTG6dgLdiKX2z/giphy.gif?cid=6c09b952f32feda613bf47216f283f33816770560ad3150d&rid=giphy.gif&ct=s' alt='not found'/>  
+        <img className={styles.cayendo} src='https://media0.giphy.com/media/jSQCODNIa6k5myYjyL/giphy.gif?cid=6c09b95248e6979255796b5f2abe4308629ab832084118a6&rid=giphy.gif&ct=s' alt='not found'/>
+        </div>
+
+
+
+
         </div>
     )
 }

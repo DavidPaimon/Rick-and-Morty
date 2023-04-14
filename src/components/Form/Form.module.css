@@ -81,8 +81,6 @@
 
 
 
-  
-
   .form-container {
     background-image: url('../../assetsform/formfondo.png');
     background-repeat: no-repeat;
@@ -210,4 +208,45 @@
     100% {
       box-shadow: 0 0 10px #4CAF50;
     }
+  }
+
+  .portales{
+    position: fixed;
+    width: 100px;
+    top: -30%;
+    left: 105%;
+    transform: translate(-50%, -50%) rotateY(180deg);
+  }
+  
+  .portales1{
+    position: fixed;
+    width: 100px;
+    top: 140%;
+    left: 105%;
+    transform: translate(-50%, -50%) rotateY(150deg);
+  }
+  
+  .cayendo{
+    position: fixed;
+    width: 100px;
+    top: -44%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    animation-delay: 1s;
+    animation: rotate1 8s linear infinite;
+    perspective: 100px;
+  }
+  
+  
+  @keyframes rotate1{
+    0%{
+        transform: translateY(0px);
+        
+     } 
+     50%{
+        
+    } 
+    to{
+        transform: translateY(432px);
+    }  
   }

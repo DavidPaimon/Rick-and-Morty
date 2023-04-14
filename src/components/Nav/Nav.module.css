@@ -4,6 +4,8 @@
     border-radius: 999999rem;
     height: 2.4rem;
     background-color: transparent;
+    position: relative;
+    margin-left: -8%;
 }
 
 .btns{
@@ -120,7 +122,7 @@
         font-weight: bold;
         position: relative;
         left: 1%;
-        top: 34%;
+        top: 28%;
         border-radius: 12px;
       }
     
@@ -161,3 +163,107 @@
         cursor: pointer;
         transform: scale(1.2);
       }
+
+      .dropdownBtn {
+        border:none ;
+        color: white;
+        cursor: pointer;
+        left: 50%;
+        font-size: 130%;
+        border-radius: 22%;
+        background: linear-gradient(
+          45deg,
+         rgb(38, 48, 36), rgb(48, 76, 48), rgb(50, 116, 50),
+         rgb(28, 152, 28), rgb(4, 250, 4), rgb(82, 254, 2)
+         );
+      }
+
+      .dropdownBtn::before{
+        content: "";  
+        position: absolute;
+        top: 0;
+        left: 8.6%;
+        z-index: -1;
+        width: 3%;
+        height: 125%;
+        background: linear-gradient(
+          45deg,
+         rgb(38, 48, 36), rgb(48, 76, 48), rgb(50, 116, 50),
+          rgb(28, 152, 28), rgb(4, 250, 4), rgb(82, 254, 2)
+        );
+        background-size: 800%;
+        border-radius: 10px;
+        filter: blur(8px);
+        animation: glowing8 16s linear infinite;
+      }
+    
+      @keyframes glowing8 {
+        0% {
+          background-position: 0 0;
+        }
+    
+        50% {
+          background-position: 400% 0;
+        }
+    
+        100% {
+          background-position: 0 0;
+        }
+      }
+      
+
+      .dropdownBtn:hover{
+        transform: scale(1.2);
+      }
+      
+      .dropdownContent {
+        display: none;
+        position: absolute;
+        top: 100%;
+        background-color: #1d7720;
+        margin-right: 21%;
+        margin-top: 1.6%;
+        min-width: 140px;
+        z-index: 1;
+        padding: 8px 0;
+        border-radius: 18px;
+        background: linear-gradient(
+          45deg,
+         rgb(38, 48, 36), rgb(48, 76, 48), rgb(50, 116, 50),
+          rgb(28, 152, 28), rgb(4, 250, 4), rgb(82, 254, 2)
+        );
+        animation: glowing000 1s linear infinite;
+      }
+    
+      @keyframes glowing000 {
+        0% {
+          box-shadow: 0 0 30px #4CAF50;
+        }
+      
+        50% {
+          box-shadow: 0 0 50px #4CAF50;
+        }
+      
+        100% {
+          box-shadow: 0 0 30px #4CAF50;
+        }
+      }
+      
+      .show {
+        display: block;
+        margin-left: -50%;
+      }
+      
+      .dropdownContent a {
+        color: white;
+        padding: 8px 12px;
+        text-decoration: none;
+        display: block;
+        font-family: 'Times New Roman', sans-serif;
+      }
+      
+      .dropdownContent a:hover {
+        background: linear-gradient(50deg, white, black, black, white);
+        transform: scale(1.1);
+      }
+      

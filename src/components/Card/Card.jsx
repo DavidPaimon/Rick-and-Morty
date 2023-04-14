@@ -59,6 +59,9 @@ function Card({ id, name, status, species, gender, origin, image, onClose, locat
 
             <div className={style.btn}>
                <button onClick={() => onClose(id)}>✘</button>
+               if () {
+                  
+               }
             </div>
          </div>
          

@@ -75,6 +75,10 @@ function App() {
             <Route path='/favorites' element={<Favorites />} />
             <Route path='/detail/:id' element={<Detail/>} />
          </Routes>
+
+         <div >
+          <img className='nave' src='https://static.wixstatic.com/media/4cfee6_8545703050f546c7b8f54fcad068d917~mv2.gif' alt='not found'/>  
+         </div>  
         
       </div>
    );
